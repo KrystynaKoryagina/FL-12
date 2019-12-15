@@ -186,7 +186,7 @@ p {
       left: 123px;
       z-index: -1; }
   .section_banner_text {
-    color: #c0c3c9;
+    color: #bbc3c4;
     margin-bottom: 0; }
   .section_banner_button {
     background-color: #699900;
@@ -197,7 +197,7 @@ p {
 .footer {
   padding-top: 120px;
   padding-bottom: 54px;
-  color: #c0c3ce;
+  color: #bbc3c4;
   background-color: #21232e; }
   .footer-wrap {
     display: flex;

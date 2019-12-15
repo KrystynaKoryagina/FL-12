@@ -33,6 +33,16 @@
     top: $top;
 }
 
+$colors: (
+	white: #fff,
+	grey: #bbc3c4
+);
+$img-sizes: (
+	1: 430px,
+	2: 416px,
+	3: 460px
+);
+
 %button {
 	display: inline-block;
 	padding: 15px 43px;
@@ -40,7 +50,7 @@
 	font-size: 18px;
 	line-height: 1;
 	font-weight: 600;
-	color: #fff;
+	color: map-get($colors, white);
 	text-align: center;
 	border: none;
 	border-radius: 3px;
@@ -54,11 +64,6 @@
 	padding: 0 15px;
 }
 
-$img-sizes: (
-	1: 430px,
-	2: 416px,
-	3: 460px
-);
 
 *, 
 *::before, 
@@ -136,7 +141,7 @@ p {
 	}
 }
 .login {
-	@include link( #fff, 20px);
+	@include link( map-get($colors, white), 20px);
 	@include font();
 	margin-left: 148px;
 }
@@ -202,18 +207,18 @@ p {
 	&_card_heading {
 		@include font();
 		font-size: 25px;
-		color: #fff;
+		color: map-get($colors, white);
 		margin-bottom: 35px;
 	}
 
 	&_card_text {
-		color: #bbc3c4;
+		color: map-get($colors, grey);
 		text-align: justify;
 		margin-bottom: 15px;
 	}
 
 	&_link {
-		@include link( #bbc3c4);
+		@include link( map-get($colors, grey));
 	}
 
 	&_banner {
@@ -254,7 +259,7 @@ p {
 	}
 
 	&_banner_text {
-		color: #c0c3c9;
+		color: map-get($colors, grey);
 		margin-bottom: 0;
 	}
 
@@ -268,7 +273,7 @@ p {
 .footer {
 	padding-top: 120px;
 	padding-bottom: 54px;
-	color: #c0c3ce;
+	color: map-get($colors, grey);
 	background-color: $footerBg;
 
 	&-wrap {
