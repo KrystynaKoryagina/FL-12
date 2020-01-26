@@ -1,0 +1,47 @@
+body {
+	font-size: 18px;
+	line-height: 1.5;
+}
+ul {
+	list-style: none;
+	padding-left: 20px;
+}
+a {
+	font: inherit;
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color .2s;
+}
+a:hover {
+	background-color: lightgrey;
+}
+li + li {
+	margin-top: 5px;
+}
+.folder .material-icons {
+	color: orange;
+}
+.file .material-icons {
+	color: grey;
+}
+.material-icons + span {
+	margin-left: 5px;
+}
+.folder > ul {
+	display: none;
+}
+.folder.open > ul {
+	display: block;
+}
+.text {
+	font-style: italic;
+	display: none;
+}
+.open > .text {
+	display: block;
+}
+
+
